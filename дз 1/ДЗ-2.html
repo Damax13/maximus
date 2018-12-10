@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    var totalCost = parseInt(prompt("Сколько вы потратили денег", ''));
+
+    if (totalCost == 0) {
+      alert("Вы ввели неправильную сумму");
+    } else {
+      if (totalCost >= 1 && totalCost < 999) {
+        alert("Ваша скидка 2%");
+      }
+
+      if (totalCost >= 1000 && totalCost < 2999) {
+        alert("Ваша скидка 5%");
+      }
+
+      if (totalCost >= 3000 && totalCost < 9999) {
+        alert("Ваша скидка 8%");
+      }
+
+      if (totalCost >= 10000) {
+        alert("Ваша скидка 10%");
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
