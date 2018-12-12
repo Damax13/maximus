@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <script>
+      var password = "Pass";
+      var userInput = prompt("Enter your password", "");
+      var attempts;
+      
+      for (attempts = 5; attempts > 0; attempts--) {
+      if (userInput === password) {
+          alert("You successfully logged in!");
+          break;
+        }
+      userInput=prompt("У вас отсалось " + attempts + " попыток","");
+        if (userInput === null) {
+          alert("Доступ запрещен");
+          break;
+        }
+      }
+      if (attempts === 0 && userInput !== password) {
+        alert("Попробуйте позже");
+      }
+
+    </script>
+
+  </body>
+
+</html>
