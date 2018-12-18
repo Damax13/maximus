@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    var min = 0;
+	var max = 100;
+	var random = Math.floor(Math.random() * (max - min)) + min;
+	alert(random);
+
+	var userInput = prompt("Введите число", "");
+
+	if (userInput === random) {
+  		alert("Класс");
+		
+	} else if (userInput > random) {
+  		alert("Мимо, " + userInput + " это перебор");
+  
+	} else if (userInput < random) {
+  		alert("Мимо, " + userInput + " это недобор");
+	}
+
+
+  </script>
+</body>
+
+</html>
