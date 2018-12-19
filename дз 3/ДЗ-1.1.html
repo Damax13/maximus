@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    var email = prompt("Введите своб почту", "");
+
+
+function emailChek(emailUser) {
+  var emailAt = emailUser.indexOf("@"); 
+  if (emailAt == -1 || emailAt == 0) {
+    return false
+  }
+  var emailDot = emailUser.lastIndexOf("."); 
+  if (emailDot - emailAt <= 1 && emailDot == emailUser.length - 1) {
+    return false
+  }
+  return true
+}
+
+var result = emailChek(email);
+
+if (result) {
+  alert("email " + email + " является валидным");
+} else {
+  alert("email " + email + " невалидный");
+}
+
+
+  </script>
+</body>
+
+</html>
