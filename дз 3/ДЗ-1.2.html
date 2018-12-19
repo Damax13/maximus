@@ -3,18 +3,30 @@
 
 <body>
   <script>
-var a = prompt prompt("Введите своб почту", "");
-var newEmail = "";  
+    var emailUser = prompt("Введите своб почту", "");
+    var newEmail = "";
+    
+    function email(emailUser) {
+      var emailAt = emailUser.indexOf("@");
+      if (emailAt == -1 || emailAt == 0) {
+        return false
+      }
+      if (emailAt => 1){
+        return true
+      }
+    }
 
-for (var i = 0; i < a.length; i++) {
-  if (i < 6) {
- newEmail += '*';
-  } else {
-    newEmail += a[i];
-  }
-}
+    var result = email(emailUser);
 
-console.log(newEmail)
+    for (var i = 0; i < email.length; i++) {
+      if (i < 6) {
+        newEmail += '*';
+      } else {
+        newEmail += a[i];
+      }
+    }
+
+    alert(newEmail)
 
 
 
