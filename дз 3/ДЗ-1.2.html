@@ -4,29 +4,29 @@
 <body>
   <script>
     var emailUser = prompt("Введите своб почту", "");
-    var newEmail = "";
-    
-    function email(emailUser) {
-      var emailAt = emailUser.indexOf("@");
-      if (emailAt == -1 || emailAt == 0) {
-        return false
-      }
-      if (emailAt => 1){
-        return true
-      }
-    }
+var newEmail = "";
 
-    var result = email(emailUser);
+function email(emailUser) {
+  var emailAt = emailUser.indexOf("@");
+  if (emailAt == -1 || emailAt == 0) {
+    return false
+  }
+  if (emailAt => 1) {
+    return true
+  }
+}
 
-    for (var i = 0; i < email.length; i++) {
-      if (i < 6) {
-        newEmail += '*';
-      } else {
-        newEmail += a[i];
-      }
-    }
 
-    alert(newEmail)
+var emailAt = emailUser.indexOf("@");
+
+for (var i = 0; i < emailAt; i++) {
+  newEmail = newEmail + "*";
+}
+
+
+var emailEnd = emailUser.substring(emailAt);
+
+alert(newEmail + emailEnd);
 
 
 
